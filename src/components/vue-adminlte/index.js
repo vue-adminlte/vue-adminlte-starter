@@ -27,8 +27,8 @@ const components = {
   LteCustomMenu: require('./CustomMenu.vue'),
   LteDivider: require('./Divider.vue'),
   LteDropBtn: require('./DropdownButton.vue'),
-  LteFooter: require('./Footer.vue'),
-  LteHeader: require('./Header.vue'),
+  LteMainFooter: require('./MainFooter.vue'),
+  LteMainHeader: require('./MainHeader.vue'),
   LteTopHeader: require('./TopHeader.vue'),
   LteHeaderItem: require('./HeaderItem.vue'),
   LteLogo: require('./HeaderLogo.vue'),
@@ -54,13 +54,12 @@ const components = {
   LteRow: require('./Row.vue'),
   LteSidebarMenu: require('./SidebarMenu.vue'),
   LteSidebarToggle: require('./SidebarToggle.vue'),
-  LteSideSearch: require('./SideSearch.vue'),
+  LteSidebarSearch: require('./SidebarSearch.vue'),
   LteSplitBtn: require('./SplitButton.vue'),
   LteTextbox: require('./TextBox.vue'),
   LteToggle: require('./ToggleButton.vue'),
   LteTreeView: require('./TreeView.vue'),
   LteUserPanel: require('./UserPanel.vue'),
-  LteTest: require('./Test.vue'),
 }
 
 export default {
