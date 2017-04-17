@@ -13,12 +13,18 @@
       <template v-for="item in items">
         <LinkItem v-if="item.type=='a'"
                   :href="item.href?item.href:'#'"
+                  :badgeText="item.badgeText?ite.badgeText:''"
+                  :badgeBg="item.badgeBg?ite.badgeBg:''"
                   :icon="item.icon?item.icon:''"> {{item.text}}</LinkItem>
         <RouterItem v-if="!item.type || item.type=='r'"
                     :to="item.to?item.to:'#'"
+                    :badgeText="item.badgeText?ite.badgeText:''"
+                    :badgeBg="item.badgeBg?ite.badgeBg:''"
                     :icon="item.icon?item.icon:''"> {{item.text}}</RouterItem>
         <ButtonItem v-if="item.type=='b'"
                     @click="item.click"
+                    :badgeText="item.badgeText?ite.badgeText:''"
+                    :badgeBg="item.badgeBg?ite.badgeBg:''"
                     :icon="item.icon?item.icon:''"> {{item.text}}</ButtonItem>
         <Divider v-if="item.type=='d'"></Divider>
       </template>

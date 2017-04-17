@@ -31,7 +31,7 @@
 export default {
   computed: {
     variantClass() {
-      return 'box-' + this.variant
+      return this.variant ? 'box-' + this.variant : ''
     },
     borderClass() {
       return this.border ? 'with-border' : ''
@@ -46,7 +46,7 @@ export default {
   props: {
     variant: {
       type: String,
-      default: 'default'
+      default: undefined
     },
     header: {
       type: String,

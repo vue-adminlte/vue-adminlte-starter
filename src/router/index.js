@@ -11,7 +11,7 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'AppStarter',
-    component: Hello
+    component: AppStarter
   }, {
     path: '/WebStarter',
     name: 'WebStarter',

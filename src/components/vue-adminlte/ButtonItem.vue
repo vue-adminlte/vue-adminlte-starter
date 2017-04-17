@@ -5,7 +5,7 @@
       <i v-if="icon"
          :class="icon"></i>
       <slot></slot>
-      <small v-if="badgeText"
+      <small v-if="badgeText || badgeBg"
              class="label pull-right"
              :class="[badgeBgClass]">{{badgeText}}</small>
     </a>
